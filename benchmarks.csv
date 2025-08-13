@@ -1,0 +1,6 @@
+model,mode,input_tokens,generated_tokens,speed_tok_s,latency_ms_per_tok,cpu,cores,threads,temperature,top_p,top_k,greedy,dynamic_int8
+TinyLlama/TinyLlama-1.1B-Chat-v1.0,GREEDY,46,147,6.17,162.1,"Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",4,8,0.5,0.9,50,1,0
+TinyLlama/TinyLlama-1.1B-Chat-v1.0,SAMPLING,50,160,5.76,173.5,"Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",4,8,0.9,0.95,50,0,0
+TinyLlama/TinyLlama-1.1B-Chat-v1.0,SAMPLING,52,160,6.32,158.3,"Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",4,8,0.4,0.9,50,0,0
+TinyLlama/TinyLlama-1.1B-Chat-v1.0,GREEDY,46,160,10.99,91,"Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",4,8,0.5,0.9,50,1,1
+distilgpt2,SAMPLING,14,80,43.8,22.8,"Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",4,8,0.7,0.9,50,0,0
