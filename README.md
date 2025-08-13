@@ -44,19 +44,18 @@ python run_llm_cpu.py --user "Explain overfitting briefly." --greedy --quantize_
 ## 3. Parameters
 ```
 | Parameter            | Description                                                                 | Default                                                                 |
-|----------------------|----------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| `--model`            | Hugging Face model ID                                                       | `TinyLlama/TinyLlama-1.1B-Chat-v1.0`                                     |
-| `--system`           | System role instruction (ignored if `--no_template` is set)                 | `"You are a concise assistant. Answer clearly and factually."`           |
-| `--user`             | User prompt (required)                                                      | -                                                                        |
-| `--temperature`      | Sampling temperature (higher = more creativity)                             | `0.5`                                                                    |
-| `--top_p`            | Nucleus sampling probability mass                                           | `0.9`                                                                    |
-| `--top_k`            | Maximum number of tokens considered at each step                            | `50`                                                                     |
-| `--max_new_tokens`   | Maximum number of tokens to generate                                         | `160`                                                                    |
-| `--greedy`           | Use greedy decoding (ignore sampling parameters)                            | disabled                                                                 |
-| `--seed`             | RNG seed for reproducibility                                                | `None`                                                                   |
-| `--no_template`      | Send raw prompt without chat formatting (for base models)                   | disabled                                                                 |
-| `--quantize_dynamic` | Enable dynamic INT8 quantization for `nn.Linear` layers on CPU               | disabled                                                                 |
-                                 |
+|----------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------|
+| `--model`            | Hugging Face model ID                                                       | `TinyLlama/TinyLlama-1.1B-Chat-v1.0`                                               |
+| `--system`           | System role instruction (ignored if `--no_template` is set)                 | `"You are a concise assistant. Answer clearly and factually."`                      |
+| `--user`             | User prompt (required)                                                      | -                                                                       |
+| `--temperature`      | Sampling temperature (higher = more creativity)                             | `0.5`                                                                      |
+| `--top_p`            | Nucleus sampling probability mass                                           | `0.9`                                                                      |
+| `--top_k`            | Maximum number of tokens considered at each step                            | `50`                                                                    |
+| `--max_new_tokens`   | Maximum number of tokens to generate                                        | `160`                                                                   |
+| `--greedy`           | Use greedy decoding (ignore sampling parameters)                            | disabled                                                                |
+| `--seed`             | RNG seed for reproducibility                                                | `None`                                                                  |
+| `--no_template`      | Send raw prompt without chat formatting (for base models)                   | disabled                                                                |
+| `--quantize_dynamic` | Enable dynamic INT8 quantization for `nn.Linear` layers on CPU              | disabled                                                                |
 ```
 
 ## 4. Output
