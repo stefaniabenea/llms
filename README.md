@@ -57,7 +57,13 @@ python run_llm_cpu.py --user "Explain overfitting briefly." --greedy --quantize_
 | `--no_template`      | Send raw prompt without chat formatting (for base models)                   | disabled                                                                 |
 | `--quantize_dynamic` | Enable dynamic INT8 quantization for `nn.Linear` layers on CPU      	     | disabled									|                                            
 ```
+```
+| Parameter | Description | Default |
+|-----------|-------------|---------|
+| `--model` | Hugging Face model ID | `TinyLlama/TinyLlama-1.1B-Chat-v1.0` |
+| `--system` | System role instruction (ignored if `--no_template` is set) | `You are a concise assistant. Answer clearly and factually.` |
 
+```
 ## 4. Output
 Each run prints two sections:
 ```
